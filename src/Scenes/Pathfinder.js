@@ -15,6 +15,7 @@ class Pathfinder extends Phaser.Scene {
     }
 
     create() {
+        // create a 
         // Create a new tilemap which uses 16x16 tiles, and is 40 tiles wide and 25 tiles tall
         this.map = this.add.tilemap("three-farmhouses", this.TILESIZE, this.TILESIZE, this.TILEHEIGHT, this.TILEWIDTH);
 
@@ -60,7 +61,6 @@ class Pathfinder extends Phaser.Scene {
 
         this.cKey = this.input.keyboard.addKey('C');
         this.lowCost = false;
-
     }
 
     update() {
