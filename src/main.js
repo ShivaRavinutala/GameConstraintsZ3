@@ -17,6 +17,13 @@
 
 
 // game config
+// Imports
+window.global = window;
+
+import Load from './Scenes/Load.js';
+import Pathfinder from './Scenes/Pathfinder.js';
+
+// Game configuration
 let config = {
     parent: 'phaser-game',
     type: Phaser.CANVAS,
@@ -28,8 +35,11 @@ let config = {
     scene: [Load, Pathfinder]
 }
 
+// Declare variables
 var cursors;
 const SCALE = 2.0;
-var my = {sprite: {}};
+export var my = { sprite: {} };
 
+// Initialize the game
 const game = new Phaser.Game(config);
+

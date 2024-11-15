@@ -26,3 +26,5 @@ class Load extends Phaser.Scene {
     update() {
     }
 }
+
+export default Load;
