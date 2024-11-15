@@ -21,6 +21,7 @@
 window.global = window;
 
 import Load from './Scenes/Load.js';
+import Boot from './Scenes/Boot.js';
 import Pathfinder from './Scenes/Pathfinder.js';
 
 // Game configuration
@@ -32,13 +33,12 @@ let config = {
     },
     width: 1280,
     height: 800,
-    scene: [Load, Pathfinder]
+    scene: [Load, Boot, Pathfinder]
 }
 
 // Declare variables
 var cursors;
 const SCALE = 2.0;
-export var my = { sprite: {} };
 
 // Initialize the game
 const game = new Phaser.Game(config);
